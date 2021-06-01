@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript" async src="https://vats408689.burger-stage.ru.itoolabs.net/callback.js?uid=eaf15b37-5490-4a42-8dd3-88cd43adbbeb" charset="utf-8"></script>
+    <!-- PrimeGate counter -->
+    <script>
+(function () {
+    var pg = document.createElement('script');
+    var protocol = 'https:' == document.location.protocol ? 'https://' : 'http://';
+    pg.src = protocol + 'js.primegate.ru/primegate.min.js'; pg.setAttribute('async', 'true');
+    document.documentElement.getElementsByTagName('head')[0].appendChild(pg);
+    PrimeGate = {}; window.pg = []; components = ['init', 'track', 'identify'];
+    for (var i in components) {
+        PrimeGate[components[i]] = (function(component) {
+            return function () {
+                window.pg.push(component, [].slice.call(arguments, 0));
+			}
+		}(components[i]));
+    }
+})();
+PrimeGate.init(1622470153);
+</script>
+    <!-- /PrimeGate.Counter -->
     <meta charset="utf-8" />
     <title>HTML5</title>
     <!--[if IE]>
